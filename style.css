@@ -1,0 +1,366 @@
+/* General Reset and Base Styles */
+body, h1, p, ul, li {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background: #f4f4f9; /* Light background for a softer look */
+}
+
+a {
+    color: #6c4f7c; /* Soft purple color for links */
+    text-decoration: none;
+}
+
+a:hover {
+    color: #8a5b9e; /* Slightly brighter purple on hover */
+}
+
+/* Header Styles */
+header {
+    background: #222; /* Dark background for contrast */
+    color: #f9f9f9; /* Light text color for readability */
+    padding: 20px 0;
+    border-bottom: 2px solid #444;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+nav p {
+    font-size: 26px;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    display: flex;
+    align-items: center;
+    color: #f9f9f9; /* Light text color for nav links */
+}
+
+nav ul li a i {
+    margin-right: 10px;
+}
+
+/* Text and Image Section */
+.text-pic {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.text {
+    flex: 1;
+    max-width: 50%;
+}
+
+.text p {
+    font-size: 22px; /* Adjusted size for better readability */
+    color: #6c4f7c; /* Soft purple for introductory text */
+}
+
+.text h1 {
+    font-size: 40px; /* Larger size for the main heading */
+    color: #8a5b9e; /* Brighter purple for main heading */
+    margin-top: 10px;
+}
+
+.text span {
+    color: #9b6c9a; /* Lighter purple for highlighted text */
+}
+
+.pic {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pic img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    border: 6px solid #9b6c9a; /* Purple border for the image */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Soft shadow for depth */
+    transition: transform 0.3s ease;
+}
+
+.pic img:hover {
+    transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+/* About Section */
+#about {
+    background: #fff; /* White background for contrast */
+    padding: 40px 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.about-row-1 {
+    flex: 1;
+    max-width: 200px;
+}
+
+.about-row-1 img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    border: 2px solid #6c4f7c; /* Soft purple border around image */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
+}
+
+.about-row-2 {
+    flex: 2;
+}
+
+.sub-title {
+    font-size: 32px; /* Adjusted size for subtitle */
+    margin-bottom: 20px;
+    color: #8a5b9e; /* Brighter purple for subtitles */
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.2); /* Subtle shadow for text */
+}
+
+/* Tabs */
+.tab-title {
+    margin-top: 20px;
+}
+
+.tab-links {
+    cursor: pointer;
+    padding: 12px 20px;
+    display: inline-block;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-right: 10px;
+    background: #6c4f7c; /* Soft purple for tab links */
+    color: #fff; /* White text color */
+    transition: background 0.3s ease;
+}
+
+.tab-links.active-link {
+    background: #8a5b9e; /* Brighter purple for active tab */
+}
+
+.tab-contents {
+    display: none;
+    margin-top: 20px;
+}
+
+.tab-contents.active-tab {
+    display: block;
+}
+
+.tab-contents ul {
+    list-style: none;
+}
+
+.tab-contents li {
+    margin-bottom: 15px;
+}
+
+.tab-contents span {
+    font-weight: bold;
+    color: #6c4f7c; /* Soft purple for skill labels */
+    font-size: 18px; /* Adjusted size for better readability */
+}
+
+/* Skills Section */
+#skills {
+    background: #fff; /* White background for contrast */
+    padding: 40px 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.skill-item {
+    flex: 1;
+    min-width: 250px;
+}
+
+.skill-item h2 {
+    font-size: 28px;
+    color: #8a5b9e; /* Brighter purple for section titles */
+    margin-bottom: 15px;
+}
+
+.skill-item ul {
+    list-style: none;
+}
+
+.skill-item li {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* Projects Section */
+#projects {
+    background: #fff; /* White background for contrast */
+    padding: 40px 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.projects-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.project-item {
+    flex: 1;
+    min-width: 250px;
+}
+
+.project-item h2 {
+    font-size: 28px;
+    color: #8a5b9e; /* Brighter purple for project titles */
+    margin-bottom: 10px;
+}
+
+.project-item p {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.project-item a {
+    color: #6c4f7c; /* Soft purple for links */
+    text-decoration: underline;
+}
+
+.project-item a:hover {
+    color: #8a5b9e; /* Brighter purple on hover */
+}
+
+/* Certifications Section */
+#certifications {
+    background: #fff; /* White background for contrast */
+    padding: 40px 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.certifications-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.certification-item {
+    flex: 1;
+    min-width: 250px;
+}
+
+.certification-item h2 {
+    font-size: 28px;
+    color: #8a5b9e; /* Brighter purple for certification titles */
+    margin-bottom: 10px;
+}
+
+.certification-item p {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* Contact Section */
+#contact {
+    background: #fff; /* White background for contrast */
+    padding: 40px 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.social-media {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.social-media div {
+    flex: 1;
+    max-width: 220px;
+}
+
+.social-link {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    font-size: 18px; /* Adjusted size for social media links */
+    color: #6c4f7c; /* Soft purple for social media links */
+    transition: color 0.3s ease;
+}
+
+.social-link i {
+    margin-right: 12px;
+}
+
+.social-link p {
+    margin: 0;
+    font-size: 16px; /* Adjusted size for contact details */
+}
+
+.social-link:hover {
+    color: #8a5b9e; /* Brighter purple on hover */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .text-pic {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .text, .pic {
+        margin-bottom: 20px;
+    }
+
+    .row {
+        flex-direction: column;
+    }
+
+    .about-row-1, .about-row-2, .skill-item, .project-item, .certification-item {
+        max-width: 100%;
+    }
+
+    .skills-list, .projects-list, .certifications-list {
+        flex-direction: column;
+    }
+}
+

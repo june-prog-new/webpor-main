@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <header id="header">
+        <div class="container">
+            <nav>
+                <p>PORTFOLIO</p>
+                <ul>
+                    <li><a href="#home"><i class='bx bxs-home'></i> Home</a></li>
+                    <li><a href="#about"><i class='bx bx-user'></i> About</a></li>
+                    <li><a href="#education"><i class='bx bxs-book'></i> Education</a></li> 
+                    <li><a href="#contact"><i class='bx bxs-phone'></i> Contact</a></li> 
+                </ul>
+            </nav>
+            <div class="text-pic">
+                <div class="text">
+                    <p>Hello!</p>
+                    <h1> I'm <span>June M. Ignacio</span><br> from IT Department</h1>
+                </div>
+                <div class="pic">
+                    <img src="images/june.jpg" alt="Profile Picture">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-row-1">
+                    
+                </div>
+                <div class="about-row-2">
+                    <h1 class="sub-title">Hobbies & Achievements</h1>
+                    <p>Hi! I’m June M. Ignacio, currently enrolled in the IT Department. I’m passionate about technology and continually strive to improve my skills. Here are some of my hobbies and achievements:</p>
+                    
+                    <div class="tab-title">
+                        <p class="tab-links active-link" onclick="opentab('hobbies')">Hobbies</p>
+                        <p class="tab-links" onclick="opentab('achievements')">Achievements</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="hobbies">
+                        <ul>
+                            <li><span>Basketball:</span><br>Basketball is my favorite hobby, and I love the way it combines strategy, teamwork, and physical skill. Whether I’m practicing my dribbling, perfecting my shot, or playing a pick-up game with friends, the sport energizes me </li>
+                            <li><span>Video Games:</span><br> I am passionate about video games, which enhance my strategic thinking and problem-solving abilities.</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="achievements">
+                        <ul>
+                            <li><span>Being A Basketball varsity:</span><br> Making the varsity basketball team as an eighth grader was a thrilling achievement that showcased my dedication and skill, setting the stage for a remarkable high school career.</li>
+
+                            <li><span>Being Part Of The Regional Basketball Team:</span><br> Being part of the regional team in the PRISAA Nationals to represent the MIMAROPA region was an exciting achievement, highlighting my skills and dedication on a larger stage.</li>
+
+                            <li><span>Athlete Of The Year Award:</span><br> Winning the Athlete of the Year award in high school for basketball was an incredible honor that reflected the countless hours of practice, teamwork, and determination I put into every game and season.</li>
+                            
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="education">
+        <div class="container">
+            <h1 class="sub-title">Educational Background</h1>
+            <div class="education-list">
+                <div class="education-item">
+                    <h2>Elementary School</h2>
+                    <p><strong>School Name:</strong>Victoria Elementary School</p>
+                    <p><strong>Years Attended:</strong> 2004 - 2011</p>
+                    </p>
+                </div>
+                <div class="education-item">
+                    <h2>High School</h2>
+                    <p><strong>School Name:</strong> Eastern Mindoro College</p>
+                    <p><strong>Years Attended:</strong> 2011 - 2015</p>
+                    
+                </div>
+                <div class="education-item">
+                    <h2>College</h2>
+                    <p><strong>Institution Name:</strong>Innovative College of Science & Technology </p>
+                    <p><strong>Years Attended:</strong> Ongoing</p>
+                    <p><strong>Degree:</strong> Bachelor of Information Technology</p>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <h1 class="sub-title">Get in Touch</h1>
+            <p>Feel free to connect with me through the following channels:</p>
+            <div class="social-media">
+                <div>
+                    <a href="https://facebook.com" target="_blank" class="social-link"><i class='bx bxl-facebook'></i> Facebook</a>
+                    <p>June Ignacio</p>
+                </div>
+                <div>
+                    <a href="mailto:juneignacio21@gmail.com" target="_blank" class="social-link"><i class='bx bx-envelope'></i> Email</a>
+                    <p>juneignacio21@gmail.com</p>
+                </div>
+                <div>
+                    <a href="tel:+1234567890" target="_blank" class="social-link"><i class='bx bx-phone'></i> Phone</a>
+                    <p>09458097428</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+   <script src="script.js"></script>
+</body>
+</html>
